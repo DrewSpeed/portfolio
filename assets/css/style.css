@@ -1,6 +1,6 @@
 :root {
-    --primary-color: #403848;
-    --secondary-color: #575366;
+    --primary-color: #090920;
+    --secondary-color: #4b4b66;
     --tertiary-color: #D9d375;
     --glow-color: #D9D375;
 }
@@ -16,6 +16,20 @@ body {
     background-color: var(--secondary-color);
 }
 
+
+
+.section-title {
+    font-size: 30px;
+    color: var(--tertiary-color);
+    border-bottom: 3px solid var(--tertiary-color);
+    padding-bottom: 15px;
+    text-align: center;
+    margin: 0 auto 15px auto;
+    width: 80%;
+  }
+
+/* header start*/
+
 header {
     padding: 20px 0px 0px 0px;
     background-color: var(--primary-color);
@@ -26,10 +40,6 @@ header {
     position: relative;
     top: 0;
 }
-
-  header h1 {
-
-  }
 
 header a {
     color: var(--tertiary-color);
@@ -65,10 +75,35 @@ header nav ul {
 
   header nav ul li a {
       font-size: 20px;
-      padding: 10px 15px;
+      padding: 10px 25px;
       text-shadow: 0 0 10px black;
   }
 
   header nav ul li a:hover {
       text-shadow: 0 0 2px var(--glow-color);
   }
+
+  /* header end */
+
+/* About Me start */
+
+#about-me {
+    display: flex;
+    flex-direction: column;
+}
+
+.avatar {
+    border-radius: 50%;
+    margin: 25px;
+    align-self: center;
+    max-width: 200px;
+    height: auto;
+    flex-shrink: 5;
+    border: 5px inset var(--tertiary-color);
+}
+
+.about-text {
+    margin: 30px;
+    text-align: center;
+    flex: 60%;
+}
