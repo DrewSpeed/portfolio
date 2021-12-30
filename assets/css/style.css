@@ -36,9 +36,7 @@ header {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    position: -webkit-sticky;
-    position: relative;
-    top: 0;
+    width: 100%;
 }
 
 header a {
@@ -159,6 +157,8 @@ header nav ul {
 
 /* Work end */
 
+/* Contact Me start */
+
 #contact {
     display:flex;
     flex-wrap:wrap;
@@ -180,3 +180,27 @@ header nav ul {
     padding-left: 10px;
     flex: 3;
 }
+
+/* Contact Me end */
+
+@media screen and (min-width: 768px) {
+header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    padding: 10px;
+    z-index:9999;
+    border-bottom: 2px solid var(--tertiary-color);
+}
+header nav, header a {
+    background-color: var(--primary-color);
+    margin: 0;  
+    align-items: space-around;
+    text-align: right;
+}
+header h1 {
+    width: 50%;
+    text-align: left;
+}
+}
+
