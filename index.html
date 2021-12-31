@@ -14,7 +14,7 @@
     <h1>Drew Speed</h1>
     <nav>
         <ul>
-            <li><a href="#about-me">About Me</a></li>
+            <li><a href="#">About Me</a></li>
             <li><a href="#work">Work</a></li>
             <li><a href="#contact">Contact Me</a></li>
         </ul>
@@ -22,6 +22,7 @@
 </header>
 
 <section id="about-me">
+    <div class="about-spacer"></div>
     <img class="avatar" src="assets/images/drewspeed.jpeg" alt="a photo of me"/>
     <container class="about-text">
         <h2 class="section-title">About Me</h2>
@@ -30,27 +31,36 @@
             Modi dolore dolorem tenetur officia iste deserunt, harum cupiditate blanditiis neque dolorum eaque beatae totam ad perferendis. Atque laboriosam, dolores, minima eveniet tenetur impedit tempora ducimus deserunt voluptates culpa a?
             </p>
     </container>
+    <div class="about-spacer"></div>
 </section>
 
-<section id="work" claass="work">
-    <h2 class="section-title">Work</h2>
-    <container class="first-apps">
-        <a  href="https://drewspeed.github.io/run-buddy/">
-            <img class="main-app" src="assets/images/run-buddy.png" alt="a preview of the run buddy application"/>
-        </a>
-    </container>
-    <div class="secondary-apps">
-        <article class="secondary-app">
-            <a href="https://drewspeed.github.io/horiseon-landing-page/">
-                <img src="assets/images/horiseon.jpeg" alt="a preview of the horiseon application"/>
-            </a>
-        </article>
-        <article class="secondary-app in-progress">
-            <a href="#">
-                <img src="assets/images/under-construction.png" alt="this application is a work in progress"/>
-            </a>
-        </article>
+<section id="work">
+    <div class="flex-row">
+        <h2 class="section-title">Work</h2>
     </div>
+    <container class="work">
+        <a class="preview link" id="run-buddy" href="https://drewspeed.github.io/run-buddy/">
+            <div class="banner">
+                    <div class="link"></div>
+                    <h3>Run Buddy</h3>
+                    <h4>HTML/CSS</h4>               
+            </div>
+        </a>
+        <div class="secondary-apps">
+        <a class="preview link" id="horiseon" href="https://drewspeed.github.io/horiseon-landing-page/">
+            <div class="banner">
+                <h3>Horiseon</h3>
+                <h4>HTML/CSS</h4>
+            </div>
+        </a>
+        <a class="preview link" id="robot-gladiators" href="#">
+            <div class="banner">
+                <h3>Robot Gladiators (Under Construction)</h3>
+                <h4>JavaScript</h4>
+            </div>
+        </a>
+    </div>
+    </container>
 </section>
 
 <section id="contact">

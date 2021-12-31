@@ -23,7 +23,7 @@ body {
     padding-bottom: 15px;
     text-align: center;
     margin: 15px auto;
-    width: 80%;
+    width: 70%;
   }
 
 
@@ -94,10 +94,10 @@ header nav ul {
     border-radius: 50%;
     margin: 25px;
     align-self: center;
-    max-width: 200px;
+    max-width: 250px;
     height: auto;
-    flex-shrink: 5;
     border: 5px inset var(--tertiary-color);
+    justify-content: center;
 }
 
 .about-text {
@@ -109,52 +109,83 @@ header nav ul {
 /* About Me end */
 
 /* Work start */
-
-#work img {
-    opacity: 60%;
+.work {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
 }
 
-#work img:hover {
-    opacity:100%;
-    box-shadow: 0 0 10px var(--glow-color);
+.work h3 {
+    z-index: 999;
+    color:var(--tertiary-color);
+    width: 35%;
+    font-size: 16px;
+    padding-top: 5px;
+    text-shadow: 2px 1px 2px var(--primary-color);
+    margin-top: 100px;
 }
 
-.main-app {
-    border-radius: 15px;
-    align-self: center;
-    max-width: 80%;
+.work h4 {
+    color: var(--tertiary-color);
+    width: 35%;
+    font-size: 10px;
+    padding-bottom: 5px;
+    margin-bottom: 75px;
+}
+
+
+.link {
+    z-index: 1;
+    text-decoration: none;
+}
+
+.preview {
+    background-size: cover;
+    background-position: top;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 1.5% auto;
     height: auto;
-    display: block;
-    margin: 15px auto;
+    border: 3px solid var(--secondary-color);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    opacity: 70%;
+}
+
+.preview:hover {
+    box-shadow: 0 0 10px var(--glow-color);
+    opacity: 100%;
+}
+
+.banner {
+    width: 35%;;
 }
 
 .secondary-apps {
-    /*
     display: flex;
-    align-content: space-between;
-    justify-content: center;
+    flex-direction: column;
+    width: 100%
+}
+
+
+#run-buddy {
+    background-image: url(../images/run-buddy.png);
     width: 80%;
-    */
-    width: 85%;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    height: 300px;;
 }
 
-.secondary-app {
-    margin: 20px;
-    background: var(--secondary-color);
-    color: var(--primary-color);
-    flex: 1;
+#horiseon{
+    background-image: url(../images/horiseon.jpeg);
+    width: 80%;
+    height: 200px;
 }
 
-.secondary-app img {
-    width: 100%;
-    border-radius:15px;
+#robot-gladiators {
+    background-image: url(../images/under-construction.png);
+    width: 80%;
+    height: 200px;
 }
-
-
 /* Work end */
 
 /* Contact Me start */
@@ -165,15 +196,18 @@ header nav ul {
     width: 100%;
     text-align: left;
     align-items: center;
+    border-top: 2px solid var(--tertiary-color);
 }
 
 #contact h2 {
     border-bottom: 0px;
-    border-right: 3px solid var(--tertiary-color);
+    border-right: 3px outset var(--tertiary-color);
     flex: 3;
-    height:auto;
+    height: auto;
     text-align: right;
     padding-right: 10px;
+    padding-top: 10px;
+    margin: 0;
 }
 
 .contact-info {
@@ -183,7 +217,13 @@ header nav ul {
 
 /* Contact Me end */
 
-@media screen and (min-width: 768px) {
+.flex-row {
+    display: flex;
+}
+
+
+
+@media screen and (min-width: 800px) {
 header {
     position: -webkit-sticky;
     position: sticky;
@@ -202,5 +242,25 @@ header h1 {
     width: 50%;
     text-align: left;
 }
+
+.about-spacer {
+    width: 10%;
+}
+#about-me {
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
 }
 
+.secondary-apps {
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    width: 90%;
+}
+
+
+
+#horiseon, #robot-gladiators {
+    width: 40%;
+}
