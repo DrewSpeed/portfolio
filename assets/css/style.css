@@ -215,6 +215,11 @@ header nav ul {
     flex: 3;
 }
 
+.icon {
+    width:34px;
+    height: auto;
+}
+
 /* Contact Me end */
 
 .flex-row {
