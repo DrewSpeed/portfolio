@@ -16,18 +16,6 @@ body {
     background-color: var(--secondary-color);
 }
 
-.section-title {
-    font-size: 30px;
-    color: var(--tertiary-color);
-    border-bottom: 3px solid var(--tertiary-color);
-    padding-bottom: 15px;
-    text-align: center;
-    margin: 15px auto;
-    width: 70%;
-  }
-
-
-
 /* header start*/
 
 header {
@@ -38,12 +26,10 @@ header {
     flex-wrap: wrap;
     width: 100%;
 }
-
 header a {
     color: var(--tertiary-color);
     text-decoration: none;
 }
-
 header h1 {
     width: 100%;
     text-align: center;
@@ -54,14 +40,10 @@ header h1 {
     margin: 0;
     text-shadow: 0 0 10px black;
 }
-
 header nav {
     margin: 7px 0;
     border-radius: 10px;
-
 }
-
-
 header nav ul {
     margin-top: 20px;
     width: 100%;
@@ -69,27 +51,22 @@ header nav ul {
     justify-content: center;
     align-items: center;
     list-style: none;
-  }
-
+}
   header nav ul li a {
       font-size: 20px;
       padding: 10px 25px;
       text-shadow: 0 0 10px black;
-  }
-
-  header nav ul li a:hover {
+}
+header nav ul li a:hover {
       text-shadow: 0 0 2px var(--glow-color);
-  }
-
-  /* header end */
+}
+/* header end */
 
 /* About Me start */
-
 #about-me {
     display: flex;
     flex-direction: column;
 }
-
 .avatar {
     border-radius: 50%;
     margin: 25px;
@@ -99,13 +76,11 @@ header nav ul {
     border: 5px inset var(--tertiary-color);
     justify-content: center;
 }
-
 .about-text {
     margin: 30px;
     text-align: center;
     flex: 60%;
 }
-
 /* About Me end */
 
 /* Work start */
@@ -115,7 +90,6 @@ header nav ul {
     justify-content: space-around;
     align-content: center;
 }
-
 .work h3 {
     z-index: 999;
     color:var(--tertiary-color);
@@ -125,7 +99,6 @@ header nav ul {
     text-shadow: 2px 1px 2px var(--primary-color);
     margin-top: 100px;
 }
-
 .work h4 {
     color: var(--tertiary-color);
     width: 35%;
@@ -133,13 +106,10 @@ header nav ul {
     padding-bottom: 5px;
     margin-bottom: 75px;
 }
-
-
 .link {
     z-index: 1;
     text-decoration: none;
 }
-
 .preview {
     background-size: cover;
     background-position: top;
@@ -152,35 +122,28 @@ header nav ul {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     opacity: 70%;
 }
-
 .preview:hover {
     box-shadow: 0 0 10px var(--glow-color);
     opacity: 100%;
 }
-
 .banner {
     width: 35%;;
 }
-
 .secondary-apps {
     display: flex;
     flex-direction: column;
     width: 100%
 }
-
-
 #run-buddy {
     background-image: url(../images/run-buddy.png);
     width: 80%;
     height: 300px;;
 }
-
 #horiseon{
     background-image: url(../images/horiseon.jpeg);
     width: 80%;
     height: 200px;
 }
-
 #robot-gladiators {
     background-image: url(../images/under-construction.png);
     width: 80%;
@@ -198,7 +161,6 @@ header nav ul {
     align-items: center;
     border-top: 2px solid var(--tertiary-color);
 }
-
 #contact h2 {
     border-bottom: 0px;
     border-right: 3px outset var(--tertiary-color);
@@ -209,12 +171,10 @@ header nav ul {
     padding-top: 10px;
     margin: 0;
 }
-
 .contact-info {
     padding-left: 10px;
     flex: 3;
 }
-
 .icon {
     width:34px;
     height: auto;
@@ -224,6 +184,15 @@ header nav ul {
 
 .flex-row {
     display: flex;
+}
+.section-title {
+    font-size: 30px;
+    color: var(--tertiary-color);
+    border-bottom: 3px solid var(--tertiary-color);
+    padding-bottom: 15px;
+    text-align: center;
+    margin: 15px auto;
+    width: 70%;
 }
 
 
@@ -263,9 +232,6 @@ header h1 {
     align-content: center;
     width: 90%;
 }
-
-
-
 #horiseon, #robot-gladiators {
     width: 40%;
 }
