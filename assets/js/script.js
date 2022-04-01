@@ -2,7 +2,9 @@ function openWork(event, title) {
     var i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("tabcontent");
     for (i=0; i < tabcontent.length; i++) {
+
         tabcontent[i].style.display="none";
+        tabcontent[i].style.visibility="hidden".opacity="";
     }
 
     tablinks = document.getElementsByClassName("tablinks");
@@ -16,10 +18,4 @@ function openWork(event, title) {
 
 document.getElementById("defaultOpen").click();
 
-function mailFormHandler() {
-    subject = document.getElementById('subject').value;
-    message = document.getElementById('msg').value;
-
-    window.open(`mailto:drewjspeed@gmail.com?subject=${subject}&body=${message}`);
-}
 
