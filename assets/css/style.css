@@ -136,3 +136,14 @@ a img:hover {
 }
 
 
+@media only screen and (max-width: 640px) {
+    .content-holder {
+        border-top-right-radius: 0px;
+    }
+
+    .tab {
+        border-top-right-radius: 15px;
+        border-bottom-left-radius: 0px;
+    }
+  }
+
