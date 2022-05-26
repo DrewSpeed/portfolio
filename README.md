@@ -9,8 +9,10 @@ A website that introduces Drew and showcases his recent projects
 ![Preview](./assets/images/portfolio-screenshot.png)
 
 ## Built With
-* HTML
-* CSS
+* React
+* Node.js
+* emailjs
+* CSS, JS and JSX
 
 ## Contribution
 Made by Drew Speed
