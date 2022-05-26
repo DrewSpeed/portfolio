@@ -1,5 +1,9 @@
-import React from 'react';
+import React, { Component } from 'react';
 import About from './components/About';
+import Work from './components/Work';
+import Layout from './components/Layout';
+import Contact from './components/Contact';
+import { Route, Routes } from 'react-router-dom';
 import Nav from './components/Navigation';
 import './App.scss'
 
@@ -7,12 +11,16 @@ import './App.scss'
 function App() {
 
   return (
-    <div className="App">
-      <Nav></Nav>
-      <main>
-        <About></About>
-      </main>
-    </div>
+  
+    <>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<About />} />
+          <Route path="/work" element={<Work />} />
+          <Route path="/contact" element={<Contact />} />
+        </Route>
+      </Routes>
+    </>
   );
 }
 

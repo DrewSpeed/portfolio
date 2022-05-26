@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './index.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHome, faUser, faEnvelope, faAddressCard, faCode } from '@fortawesome/free-solid-svg-icons'
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
+import { Link, NavLink } from 'react-router-dom'
 
 
 function Nav() {
@@ -12,10 +13,19 @@ function Nav() {
             <div className='navbar'>
                 <nav>
 
-                    <a className='about-link' href="/"> <FontAwesomeIcon icon={faUser}   color="#4d4d4e"/></a>
-                    <a className='contact-link' href="/"> <FontAwesomeIcon icon={faEnvelope}  classNamecolor="#4d4d4e"/></a>
-                    <a className='work-link' href="/"> <FontAwesomeIcon icon={faCode}  color="#4d4d4e" /></a>
-                    <a className='resume-link' href="/"> <FontAwesomeIcon icon={faAddressCard}  color="#4d4d4e"/></a>
+                    <NavLink exact="true" activeClassName="active" to="/" className='about-link' href="/"> 
+                        <FontAwesomeIcon icon={faUser}   color="#4d4d4e"/>
+                    </NavLink>
+                    <NavLink activeclassname="active" className="contact-link" to="/contact">
+                        <FontAwesomeIcon icon={faEnvelope}  classNamecolor="#4d4d4e"/>
+                    </NavLink>
+                    <NavLink activeclassname="active" className="work-link" to="/work">
+                        <FontAwesomeIcon icon={faCode}  color="#4d4d4e" />
+                    </NavLink>
+                    <a className="resume-link" target="_blank" href="https://drive.google.com/file/d/1EyPFbdEMN58bxE7-uNX_Gz_eBGSEVb2U/view">
+                        <FontAwesomeIcon icon={faAddressCard}  color="#4d4d4e"/>
+                    </a>
+
                 </nav>
                 <ul>
                     <li>
